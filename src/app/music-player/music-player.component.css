@@ -1,0 +1,56 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin {
+    animation: spin 7s linear infinite;
+    animation-play-state: paused; /* Mặc định là dừng */
+  }
+  
+  .spin.playing {
+    animation-play-state: running; /* Chạy khi nhạc phát */
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4CAF50; /* Màu của thumb */
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #4CAF50; /* Màu của thumb */
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  input[type="range"]::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background: #4CAF50; /* Màu của thumb */
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .song-list::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 8px;
+  }
+  
+  .song-list::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .song-list:hover::-webkit-scrollbar-thumb {
+    background: #bcc0c4;
+  }
